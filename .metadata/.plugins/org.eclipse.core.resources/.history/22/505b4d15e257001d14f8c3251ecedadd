@@ -1,0 +1,46 @@
+package com.portfolio.mgb.Dto;
+
+import javax.validation.constraints.NotBlank;
+
+public class dtoExperiencia {
+	
+    @NotBlank
+    private String nombreExperiencia;
+    @NotBlank
+    private String nombreEmpresa;
+    @NotBlank
+    private String tipoExperiencia;
+    
+    public dtoExperiencia() {}
+
+    public dtoExperiencia(String nombreExperiencia, String nombreEmpresa, String tipoExperiencia) {
+		this.nombreExperiencia = nombreExperiencia;
+		this.nombreEmpresa = nombreEmpresa;
+		this.tipoExperiencia = tipoExperiencia;
+	}
+
+	public String getNombreExperiencia() {
+		return nombreExperiencia;
+	}
+
+	public void setNombreExperiencia(String nombreExperiencia) {
+		this.nombreExperiencia = nombreExperiencia;
+	}
+
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+
+	public String getTipoExperiencia() {
+		return tipoExperiencia;
+	}
+
+	public void setTipoExperiencia(String tipoExperiencia) {
+		this.tipoExperiencia = tipoExperiencia;
+	}
+
+}
